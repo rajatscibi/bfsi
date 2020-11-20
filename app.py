@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-model = load_model('Final XGB Model A112020')
+model = load_model('catboost_calibrated')
 
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
